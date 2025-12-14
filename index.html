@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chi Tiết Tác Phẩm Lão Hạc Trang Nhã</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#8B7355",
+        "primary-soft": "#D2C4B5",
+        secondary: "#7A9CA5",
+        "background-light": "#FDFBF7",
+        "surface-light": "#FFFFFF",
+        "surface-subtle": "#F5F2ED",
+        "text-main": "#3E3832",
+        "text-muted": "#6B635B",
+        "accent-gold": "#C5A065",
+      },
+      fontFamily: {
+        display: ["Newsreader", "serif"],
+        sans: ["Inter", "sans-serif"]
+      },
+      boxShadow: {
+        soft: "0 4px 20px -2px rgba(139,115,85,0.1)",
+        card: "0 2px 10px rgba(0,0,0,0.03)"
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+        full: "9999px"
+      }
+    }
+  }
+}
+</script>
+
+<!-- CSS tách riêng -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background-light font-sans text-text-main antialiased overflow-x-hidden selection:bg-primary-soft selection:text-primary">
+
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-background-light shadow-[0_0_40px_rgba(0,0,0,0.05)]">
+
+<div class="sticky top-0 z-50 flex items-center bg-background-light/90 backdrop-blur-md px-6 py-4 justify-between transition-all duration-300">
+  <button class="text-text-main hover:text-primary transition-colors flex items-center justify-center p-2 -ml-2 rounded-full hover:bg-surface-subtle">
+    <span class="material-symbols-outlined text-2xl">arrow_back</span>
+  </button>
+  <div class="flex gap-4">
+    <button class="text-text-main hover:text-primary transition-colors p-2 rounded-full hover:bg-surface-subtle">
+      <span class="material-symbols-outlined">favorite_border</span>
+    </button>
+    <button class="text-text-main hover:text-primary transition-colors p-2 -mr-2 rounded-full hover:bg-surface-subtle">
+      <span class="material-symbols-outlined">ios_share</span>
+    </button>
+  </div>
+</div>
+
+<div class="flex-1 flex flex-col pb-24">
+
+<div class="px-6 pt-2 pb-8 flex flex-col items-center">
+  <div class="relative group">
+    <div class="absolute -inset-1 bg-gradient-to-tr from-primary-soft to-secondary/30 rounded-lg blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
+    <div class="relative w-40 aspect-[2/3] rounded-md shadow-soft overflow-hidden">
+      <div class="w-full h-full bg-center bg-cover transform transition duration-700 hover:scale-105"
+        style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOZ4ptUwR3pIzyZczVysDi5LQGA2SbQqqoOe6mWXRdnTs3O3PYowf0XF0oENfG2JwmSJ9q1x4xpBBMclYzSeIDdmODaAA5H8UErgQPoCjra-uRg-SoU6FNBz2RmEdba7CpD0R0vKwOJCSc-zMlKLZ_Rznn7dp3czONKfCC1UdEGCdtWZC0FrsahFkWe8AmiyFPV8Pow0DWd5RWq2ptsXeGEzaw40qft4Oiduh4E87qvjKlql5tz3gVSi8Qwg4_jqwBdf39cZZt0eb_");'>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-8 text-center w-full">
+    <h1 class="font-display text-4xl font-semibold mb-2">Lão Hạc</h1>
+    <p class="text-primary text-xs uppercase mb-6">Nam Cao</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
